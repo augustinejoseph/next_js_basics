@@ -1,14 +1,15 @@
 export const Header = () => {
   return (
-    <>
-      <h1
-        style={{
-          backgroundColor: "lightblue",
-          padding: "1rem",
-        }}
-      >
-        Header
-      </h1>
-    </>
+    <div
+      style={{
+        backgroundColor: "lightblue",
+        padding: "1rem",
+        alignItems: "center",
+        justifyContent: "center",
+        display: 'flex'
+      }}
+    >
+      Header
+    </div>
   );
 };
