@@ -1,6 +1,15 @@
+"use client";
 import Link from "next/link";
 
 export default function Home() {
+  const getRandomInt = (num: number) => {
+    return Math.floor(Math.random() * num);
+  };
+
+  const randomNum = getRandomInt(2);
+  if (randomNum === 1) {
+    throw new Error("Errror Loading Product Details....");
+  }
   return (
     <>
       <h1>All Products</h1>
