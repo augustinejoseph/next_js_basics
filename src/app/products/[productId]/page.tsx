@@ -1,9 +1,7 @@
 import { NextPage } from "next";
 
-interface Props {}
-
-const ProductDetails = ({ params }) => {
-  const { productId } = params;
+const ProductDetails = async ({ params }: Promise<{ productId: string }>) => {
+  const { productId } = await params;
 
   return <h1>Details of Product {productId}</h1>;
 };
