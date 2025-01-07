@@ -14,6 +14,11 @@ export default function Home() {
       <button>
         {" "}
         <Link href="/products">View all products</Link>
+
+      </button>
+      <button>
+      <Link href="/complex-dashboard">Parallel Routing</Link>
+
       </button>
     </div>
   );
