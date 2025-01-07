@@ -5,20 +5,18 @@ export default function Home() {
     <div
       style={{
         alignItems: "center",
-        justifyContent: "space-around",
         display: "flex",
         flexDirection: "column",
+        height: '85vh'
       }}
     >
       <h1>HOME!!</h1>
       <button>
         {" "}
         <Link href="/products">View all products</Link>
-
       </button>
       <button>
-      <Link href="/complex-dashboard">Parallel Routing</Link>
-
+        <Link href="/complex-dashboard">Parallel Routing</Link>
       </button>
     </div>
   );

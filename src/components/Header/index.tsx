@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Header = () => {
   return (
     <div
@@ -9,7 +11,8 @@ export const Header = () => {
         display: 'flex'
       }}
     >
-      Header
+      <Link href='/'>Home</Link>
+      
     </div>
   );
 };

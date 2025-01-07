@@ -7,17 +7,17 @@ export const Footer = () => {
     { name: "Products", url: "/products" },
     { name: "Blogs", url: "/blog" },
   ];
+
   return (
     <div
       style={{
-        position: "absolute",
         backgroundColor: "lightblue",
         padding: "1rem",
-        bottom: "0",
-        alignItems: "space-around",
-        justifyContent: "space-around",
         display: "flex",
-        gap: "100px",
+        justifyContent: "center",
+        gap: "30px",
+        alignItems: "center",
+        position: "relative",
       }}
     >
       {navLinks.map((item) => (
