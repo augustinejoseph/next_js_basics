@@ -7,7 +7,7 @@ export default function Home() {
         alignItems: "center",
         display: "flex",
         flexDirection: "column",
-        height: '85vh'
+        height: "85vh",
       }}
     >
       <h1>HOME!!</h1>
@@ -17,6 +17,12 @@ export default function Home() {
       </button>
       <button>
         <Link href="/complex-dashboard">Parallel Routing</Link>
+      </button>
+      <button>
+        <Link href="/comments">Handling GET Request</Link>
+      </button>
+      <button>
+        <Link href="/comments">Handling POST Request</Link>
       </button>
     </div>
   );
