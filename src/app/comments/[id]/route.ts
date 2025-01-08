@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { comments } from "../data";
 
 export async function GET(
@@ -7,6 +8,9 @@ export async function GET(
   const comment = comments.find(
     (comment) => comment.id === parseInt(params.id)
   );
+  if (!comment){
+    return redirect('/comments')
+  }
   return new Response(JSON.stringify(comment));
 }
 
